@@ -1,3 +1,11 @@
+
+pagina
+https://nprx.glitch.me
+=========
+
+Practica en scotch.io
+https://scotch.io/courses/create-a-crud-app-with-node-and-mongodb/deleting-events
+
 Welcome to the Glitch BETA
 =========================
 
