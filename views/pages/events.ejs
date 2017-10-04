@@ -1,0 +1,36 @@
+<div class="jumbotron text-center">
+ <h1>All events</h1>
+</div>
+
+
+<% if (success.length > 0) { %>
+ <div class="alert alert-success"><%= success %></div>
+<% } %>
+
+
+<table class="table table-bordered table-hover table-striped">
+ <thead>
+  <tr>
+   <th>Event Name</th>
+   <th>Description</th>
+   <th></th>
+  </tr>
+ </thead>
+<tbody>
+
+<% for(ev of eventos){ %>
+ <tr>
+  <td><%= ev.name %></td>
+  <td><%= ev.descr %></td>
+ <td><a href="/events/<%= ev.slug %>"
+  class="btn btn-sm btn-primary">View</a>
+   <a href="/events/<%= ev.slug %>/edit"
+      class="btn btn-sm btn-primary">Edit</a>
+   <a href="/events/<%= ev.slug %>/delete"
+      class="btn btn-sm btn-danger">Delete</a>
+ </td>
+ </tr>
+<% } %>
+  
+</tbody>
+</table>
