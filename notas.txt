@@ -1,0 +1,16 @@
+curso: https://scotch.io/courses/create-a-crud-app-with-node-and-mongodb/getting-started
+
+server.js:-----
+
+const express=require('express'),
+  A=express(), //app
+  port=3000;//process.ENV.PORT||8000
+
+A.get("/",(req,res)=>{
+ res.send("mando de la app.get");
+});//app.get
+
+A.listen(port,()=>{
+console.log("app escuchando en http://localhost:"+port);
+});
+//.......
